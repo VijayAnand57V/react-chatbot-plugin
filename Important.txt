@@ -1,0 +1,27 @@
+import ChatBot from 'react-simple-chatbot';
+import icon from './assets/favicon.png';
+import { ThemeProvider } from 'styled-components';
+
+  <ThemeProvider theme={theme}>
+    <ChatBot steps={steps} 
+    floating="true"
+    headerTitle="Madurai Softwares"
+    botAvatar={icon}
+    hideUserAvatar="true"
+    userDelay="100"
+    />;
+  </ThemeProvider>
+    </div>
+  );
+
+  const theme = {
+    background: '#f5f8fb',
+    fontFamily: '500 16px/20px "Poppins", sans-serif',
+    headerBgColor: '-webkit-linear-gradient(45deg, #3edc93 0%, #53c2d4 58%, #57bce2 100%)',
+    headerFontColor: '#fff',
+    headerFontSize: '15px',
+    botBubbleColor: '-webkit-linear-gradient(45deg, #3edc93 0%, #53c2d4 58%, #57bce2 100%)',
+    botFontColor: '#fff',
+    userBubbleColor: '#cddeee',
+    userFontColor: '#4a4a4a',
+  };
